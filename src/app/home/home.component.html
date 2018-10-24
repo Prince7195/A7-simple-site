@@ -1,3 +1,18 @@
-<p>
-  home works!
-</p>
+<!-- <h1 [class.grey]="h1Style">Home</h1> -->
+<!-- <h1 [ngClass]="{
+  grey: h1Style,
+  large: !h1Style
+}">Home</h1> -->
+<!-- <h1 [style.color]="h1Style ? 'grey': 'blue'">Home</h1> -->
+<!-- <h1 [ngStyle]="{
+  'color': h1Style ? 'grey' : 'blue',
+  'font-size': h1Style ? '1em' : '2em'
+}">Home</h1> -->
+<!-- <button (click)="firstClick()">Click Me</button> -->
+<h1>Home</h1>
+<ul *ngIf="users">
+  <li *ngFor="let user of users.data">
+    <img [src]="user.avatar" alt="">
+    <p>{{user.first_name}} {{user.last_name}}</p>
+  </li>
+</ul>

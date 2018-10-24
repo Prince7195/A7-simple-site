@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavComponent implements OnInit {
 // tslint:disable-next-line:no-inferrable-types
-  heading: string = 'A7 Site';
+  heading: string = 'NG7 Web Site';
   constructor() { }
 
   ngOnInit() {
